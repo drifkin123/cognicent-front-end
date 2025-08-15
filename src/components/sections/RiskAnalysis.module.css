@@ -1,0 +1,414 @@
+.riskAnalysisSection {
+  padding: var(--space-8) 0;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 var(--space-8);
+  color: #5DADE2;
+  max-width: 1200px;
+  line-height: 1.3;
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* Department Risk Map Table */
+.topTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.riskMapTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: white;
+  min-width: 800px;
+}
+
+.riskMapHeader {
+  background: #2c3e50 !important;
+  color: white !important;
+  padding: 16px 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #dee2e6;
+  border-right: 1px solid #34495e;
+  line-height: 1.2;
+}
+
+.riskMapHeader:last-child {
+  border-right: none;
+}
+
+.departmentCell {
+  background: #f8f9fa;
+  color: #2c3e50;
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+.percentageCell {
+  padding: 16px 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+/* Risk Level Styling */
+.lowRisk {
+  background: #27AE60 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+.moderateRisk {
+  background: #F39C12 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+.highRisk {
+  background: #E67E22 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+.criticalRisk {
+  background: #C0392B !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #e9ecef;
+}
+
+.riskMapTable td:last-child {
+  border-right: none;
+}
+
+/* Bottom Row Layout */
+.bottomRow {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+/* Profile Section */
+.profileSection {
+  flex: 1;
+  max-width: 550px;
+}
+
+.profileTitle {
+  background: #2c3e50;
+  color: white;
+  padding: 16px;
+  margin: 0 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.sectionTitle {
+  background: #34495e;
+  color: white;
+  padding: 12px 16px;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dispositionSection {
+  background: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+
+.profileTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.traitCell {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  color: #2c3e50;
+  background: #f8f9fa;
+  border-bottom: 1px solid #f1f3f4;
+  width: 60%;
+}
+
+.valueCell {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #f1f3f4;
+  background: white;
+}
+
+.profileTable tbody tr:last-child .traitCell,
+.profileTable tbody tr:last-child .valueCell {
+  border-bottom: none;
+}
+
+/* Profile Value Styling */
+.lowValue {
+  background: #27AE60 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 60px;
+}
+
+.moderateValue {
+  background: #F39C12 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 70px;
+}
+
+.highValue {
+  background: #E67E22 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 60px;
+}
+
+.criticalValue {
+  background: #C0392B !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 70px;
+}
+
+/* Recommendations Section */
+.recommendationsSection {
+  flex: 1;
+  max-width: 600px;
+}
+
+.recommendationsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5DADE2;
+  margin: 0 0 var(--space-3);
+}
+
+.riskDescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin: 0 0 var(--space-2);
+}
+
+.criticalText {
+  color: #C0392B;
+  font-weight: 600;
+}
+
+.blueText {
+  color: #5DADE2;
+  font-weight: 600;
+}
+
+.viewLinks {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 var(--space-4);
+}
+
+.link {
+  color: #5DADE2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #3498DB;
+}
+
+.drillDownTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5DADE2;
+  margin: 0 0 var(--space-2);
+}
+
+.drillDownDescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin: 0 0 var(--space-2);
+}
+
+.recommendationsSubTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5DADE2;
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+.recommendationsLink {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2rem;
+    padding: 0 var(--space-4);
+  }
+  
+  .riskMapTable {
+    font-size: 0.8rem;
+    min-width: 700px;
+  }
+  
+  .riskMapHeader {
+    padding: 12px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .departmentCell, .percentageCell {
+    padding: 12px 8px;
+  }
+  
+  .lowRisk, .moderateRisk, .highRisk, .criticalRisk {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: var(--space-6);
+  }
+  
+  .contentContainer {
+    margin: 0 var(--space-4);
+  }
+  
+  .bottomRow {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .profileSection, .recommendationsSection {
+    max-width: none;
+  }
+  
+  .riskMapTable {
+    font-size: 0.75rem;
+    min-width: 600px;
+  }
+  
+  .riskMapHeader {
+    padding: 10px 6px;
+    font-size: 0.7rem;
+  }
+  
+  .departmentCell, .percentageCell {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+  
+  .lowRisk, .moderateRisk, .highRisk, .criticalRisk {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+  
+  .profileTable {
+    font-size: 0.8rem;
+  }
+  
+  .traitCell, .valueCell {
+    padding: 10px 12px;
+  }
+  
+  .lowValue, .moderateValue, .highValue, .criticalValue {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    min-width: 50px;
+  }
+  
+  .moderateValue, .criticalValue {
+    min-width: 60px;
+  }
+  
+  .riskDescription, .drillDownDescription {
+    font-size: 0.85rem;
+  }
+  
+  .recommendationsTitle, .drillDownTitle, .recommendationsSubTitle {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,121 @@
+.assessmentSection {
+  padding: var(--space-8) 0;
+  background: white;
+}
+
+.title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 var(--space-4);
+  color: #0a0a0a;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--color-accent);
+  text-align: center;
+  margin: 0 auto var(--space-8);
+  max-width: 800px;
+  font-weight: 500;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 1200px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+  
+  .plus,
+  .equals {
+    display: none;
+  }
+}
+
+.processStep {
+  background: white;
+  padding: var(--space-5);
+  border-radius: var(--radius-2);
+  text-align: center;
+  border: 3px solid var(--color-accent);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.iconContainer {
+  margin-bottom: var(--space-3);
+}
+
+.icon {
+  color: #0a0a0a;
+  display: inline-block;
+}
+
+.stepTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-4);
+  letter-spacing: 1px;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.stepList li {
+  margin-bottom: var(--space-2);
+  color: #0a0a0a;
+}
+
+.multiLine {
+  line-height: 1.6;
+}
+
+.plus,
+.equals {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background: var(--color-accent);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.bottomText {
+  text-align: center;
+  background: var(--color-accent);
+  color: white;
+  padding: var(--space-5);
+  border-radius: var(--radius-2);
+  margin-top: var(--space-7);
+}
+
+.bottomText h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

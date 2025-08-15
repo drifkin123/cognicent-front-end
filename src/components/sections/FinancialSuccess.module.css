@@ -1,0 +1,148 @@
+.section {
+  background: linear-gradient(135deg, #4A9EE8 0%, #2D7DD2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: var(--space-8) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-8);
+  align-items: center;
+  min-height: 60vh;
+}
+
+.textContent {
+  color: white;
+  z-index: 2;
+}
+
+.title {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 var(--space-8);
+  color: white;
+  max-width: 800px;
+}
+
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.benefits li {
+  margin-bottom: var(--space-5);
+  color: white;
+  font-weight: 400;
+  position: relative;
+  padding-left: var(--space-5);
+}
+
+.benefits li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.benefits li em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hospitalGraphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hospitalImage {
+  width: 500px;
+  height: auto;
+  opacity: 0.3;
+  filter: brightness(0) invert(1);
+  transform: translateX(50px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 3rem;
+  }
+  
+  .benefits {
+    font-size: 1.3rem;
+  }
+  
+  .hospitalImage {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .benefits {
+    font-size: 1.2rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hospitalImage {
+    width: 300px;
+    transform: none;
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    min-height: auto;
+    padding: var(--space-6) 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .benefits {
+    font-size: 1.1rem;
+  }
+  
+  .benefits li {
+    margin-bottom: var(--space-4);
+  }
+  
+  .hospitalImage {
+    width: 250px;
+  }
+}

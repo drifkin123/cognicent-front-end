@@ -1,0 +1,116 @@
+.section {
+  padding: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  min-height: 600px;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  background: #f8f9fa;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+@media (max-width: 900px) {
+  .hero { 
+    grid-template-columns: 1fr;
+    min-height: 400px;
+  }
+}
+
+.leftCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.leftCol::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/hospital-interior.jpg') center/cover;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -2;
+}
+
+.leftCol::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  z-index: -1;
+}
+
+.logoSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: var(--space-5);
+  filter: none;
+}
+
+.companyName {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.rightCol {
+  background: #4a5568;
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.visionTitle {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 var(--space-6);
+  color: white;
+}
+
+.visionText {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--color-accent);
+  font-weight: 400;
+}
+
+.visionHighlight {
+  color: var(--color-accent);
+}
+
+

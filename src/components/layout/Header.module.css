@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: var(--space-5);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.nav a:hover {
+  color: var(--color-accent-dark);
+}
+
+

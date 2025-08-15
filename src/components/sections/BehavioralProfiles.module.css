@@ -1,0 +1,229 @@
+.profilesSection {
+  padding: var(--space-8) 0;
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 var(--space-8);
+  color: #5DADE2;
+  max-width: 1000px;
+  line-height: 1.3;
+}
+
+.tablesContainer {
+  display: flex;
+  gap: var(--space-6);
+  max-width: 1400px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tableWrapper {
+  flex: 1;
+  max-width: 650px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.profileTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.tableHeader {
+  background: #2c3e50 !important;
+  color: white !important;
+  padding: 20px 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.sectionHeader {
+  background: #34495e !important;
+  color: white !important;
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.profileTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f3f4;
+  vertical-align: middle;
+}
+
+.trait {
+  text-align: left;
+  font-weight: 500;
+  color: #2c3e50;
+  background: #f8f9fa;
+  width: 60%;
+}
+
+.profileTable tbody tr:hover {
+  background: #fafbfc;
+}
+
+.profileTable tbody tr:hover .trait {
+  background: #f0f0f0;
+}
+
+/* Value styling similar to risk assessment but with different colors */
+.low {
+  background: #27AE60 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 60px;
+}
+
+.lowModerate {
+  background: #52C882 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 90px;
+}
+
+.moderate {
+  background: #F39C12 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 70px;
+}
+
+.high {
+  background: #E67E22 !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 60px;
+}
+
+.veryHigh {
+  background: #C0392B !important;
+  color: white !important;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 6px 12px;
+  display: inline-block;
+  font-size: 0.8rem;
+  min-width: 80px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .tablesContainer {
+    gap: var(--space-4);
+  }
+  
+  .profileTable {
+    font-size: 0.8rem;
+  }
+  
+  .profileTable td {
+    padding: 10px 12px;
+  }
+  
+  .low, .lowModerate, .moderate, .high, .veryHigh {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    min-width: 50px;
+  }
+  
+  .lowModerate {
+    min-width: 70px;
+  }
+  
+  .veryHigh {
+    min-width: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+    padding: 0 var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+  
+  .tablesContainer {
+    flex-direction: column;
+    gap: var(--space-6);
+    margin: 0 var(--space-4);
+  }
+  
+  .tableWrapper {
+    max-width: none;
+  }
+  
+  .profileTable td {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .tableHeader {
+    font-size: 0.85rem;
+    padding: 16px 12px;
+  }
+  
+  .sectionHeader {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+  
+  .low, .lowModerate, .moderate, .high, .veryHigh {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+    min-width: 45px;
+  }
+  
+  .lowModerate {
+    min-width: 65px;
+  }
+  
+  .veryHigh {
+    min-width: 60px;
+  }
+}
