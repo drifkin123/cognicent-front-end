@@ -72,7 +72,7 @@
 }
 
 .companyName {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 4px;
@@ -93,7 +93,7 @@
 }
 
 .visionTitle {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   margin: 0 0 var(--space-6);
@@ -101,7 +101,7 @@
 }
 
 .visionText {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
   margin: 0;

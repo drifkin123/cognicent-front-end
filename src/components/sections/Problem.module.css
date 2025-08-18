@@ -21,7 +21,7 @@
   font-weight: 700;
   color: var(--color-accent);
   margin: 0 0 var(--space-2);
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
 .stat p {
