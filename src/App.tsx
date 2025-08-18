@@ -27,7 +27,6 @@ function App() {
         <meta property="og:title" content="Cognicit" />
         <meta property="og:type" content="website" />
       </Helmet>
-      <Header />
       <main id="main">
         {/* Sections matching the PDF slides exactly */}
         <Hero />
