@@ -1,8 +1,23 @@
+/* Override Section component padding for seamless connection */
+:global(#comparison) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Override the global container padding for full-width white background */
+:global(#comparison .container) {
+  max-width: none !important;
+  padding: 0 !important;
+}
+
 .comparisonContainer {
   width: 100%;
   margin: 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-  padding: 0 0 var(--space-7) 0;
+  background: white;
+  padding: var(--space-8) var(--space-4) var(--space-7) var(--space-4);
+  /* Ensure seamless connection from section above */
+  margin-top: 0;
+  position: relative;
 }
 
 .title {
@@ -11,7 +26,7 @@
   font-weight: 700;
   text-align: center;
   margin: 0 0 var(--space-7);
-  color: white;
+  color: #333;
 }
 
 .hospitalsGrid {
@@ -31,20 +46,25 @@
   .distanceIndicator {
     display: none;
   }
+  
+  .comparisonContainer {
+    padding: var(--space-6) var(--space-3) var(--space-6) var(--space-3);
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .hospital {
   background: white;
-  border-radius: var(--radius-3);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   overflow: hidden;
 }
 
 .hospitalHeader {
   padding: var(--space-5);
   text-align: center;
-  background: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
+  background: white;
 }
 
 .hospitalHeader h3 {
@@ -95,7 +115,7 @@
 .distanceLine {
   width: 30px;
   height: 1px;
-  background-color: white;
+  background-color: #ddd;
 }
 
 .distanceText {
@@ -114,13 +134,8 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--space-3) var(--space-4);
-  border-bottom: 1px solid #f1f3f4;
   font-size: 0.9rem;
   margin: 0 calc(-1 * var(--space-4));
-}
-
-.metric:last-child {
-  border-bottom: none;
 }
 
 .metric.highlighted {
@@ -143,8 +158,6 @@
   text-align: center;
   padding: var(--space-6);
   background: white;
-  border-radius: var(--radius-3);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .conclusion p {

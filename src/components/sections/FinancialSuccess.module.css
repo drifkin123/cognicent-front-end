@@ -1,6 +1,5 @@
 .section {
   background: linear-gradient(135deg, #4A9EE8 0%, #2D7DD2 100%);
-  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: var(--space-8) 0;
@@ -79,9 +78,20 @@
 .hospitalImage {
   width: 500px;
   height: auto;
-  opacity: 0.3;
-  filter: brightness(0) invert(1);
+  opacity: 1;
   transform: translateX(50px);
+  /* Use drop-shadow instead of filters for better visibility */
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+}
+
+/* Override SVG colors to ensure visibility */
+.hospitalImage path,
+.hospitalImage circle,
+.hospitalImage rect,
+.hospitalImage polygon {
+  fill: rgba(255, 255, 255, 0.9) !important;
+  stroke: rgba(255, 255, 255, 1) !important;
+  stroke-width: 2px !important;
 }
 
 /* Responsive Design */
@@ -120,7 +130,6 @@
   .hospitalImage {
     width: 300px;
     transform: none;
-    opacity: 0.2;
   }
 }
 

@@ -1,10 +1,25 @@
+/* Override Section component padding for seamless connection */
+:global(#opportunity) {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #f8f9fa !important;
+}
+
+/* Override the global container padding for full-width background */
+:global(#opportunity .container) {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 .opportunitySection {
   text-align: center;
-  padding: var(--space-8) 0;
   background-color: #f8f9fa;
-  margin: 0 calc(-50vw + 50%);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
+  padding: var(--space-8) var(--space-4);
+  width: 100vw;
+  margin: 0;
+  margin-left: calc(50% - 50vw);
 }
 
 .title {

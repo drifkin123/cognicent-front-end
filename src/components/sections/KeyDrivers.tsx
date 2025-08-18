@@ -19,23 +19,14 @@ function KeyDrivers() {
             <div className={styles.icebergContainer}>
               <img src="/images/iceberg.svg" alt="Iceberg" className={styles.icebergImage} />
               
-              {/* Arrows and connection lines - positioned via CSS */}
-              <div className={styles.arrowLine}>
-                <div className={styles.horizontalArrow}></div>
-              </div>
-              <div className={styles.arrowLine}>
-                <div className={styles.horizontalArrow}></div>
-              </div>
-              <div className={styles.arrowLine}>
-                <div className={styles.horizontalArrow}></div>
-              </div>
-              <div className={styles.arrowLine}>
-                <div className={styles.horizontalArrow}></div>
-              </div>
+              {/* Water line separating visible and hidden problems */}
+              <div className={styles.waterLine}></div>
+              
+
             </div>
           </div>
           
-          {/* Right side - Text Content */}
+          {/* Right side - Text Content with arrows */}
           <div className={styles.rightContent}>
             <div className={styles.driversList}>
               <div className={styles.driverItem}>

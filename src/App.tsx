@@ -12,7 +12,6 @@ import RiskAssessment from './components/sections/RiskAssessment';
 import BehavioralProfiles from './components/sections/BehavioralProfiles';
 import RiskAnalysis from './components/sections/RiskAnalysis';
 import PlatformIntegration from './components/sections/PlatformIntegration';
-import Collaboration from './components/sections/Collaboration';
 import PartnerLogos from './components/sections/PartnerLogos';
 import References from './components/sections/References';
 
@@ -42,6 +41,7 @@ function App() {
         <BehavioralProfiles />
         <RiskAnalysis />
         <PlatformIntegration />
+        <PartnerLogos />
         <References />
       </main>
       <Footer />

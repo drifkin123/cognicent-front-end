@@ -1,11 +1,12 @@
 .riskAnalysisSection {
-  padding: var(--space-8) 0;
+  padding: var(--space-8) var(--space-4);
   background: white;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .title {

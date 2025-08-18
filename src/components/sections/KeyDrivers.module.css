@@ -1,9 +1,8 @@
 /* Main section with blue gradient background matching the slide */
 .keyDriversSection {
   background: linear-gradient(135deg, #2E8BC0 0%, #1F5582 50%, #0F3A5F 100%);
-  padding: 80px 0;
+  padding: var(--space-8) 0;
   color: white;
-  min-height: 600px;
   position: relative;
   overflow: hidden;
 }
@@ -60,49 +59,21 @@
   z-index: 5;
 }
 
-/* Horizontal arrows pointing right - positioned to align with iceberg layers */
-.arrowLine {
+/* Water line positioned where white changes to blue on iceberg */
+.waterLine {
   position: absolute;
-  right: -25px;
-  width: 100px;
-  height: 2px;
-  z-index: 15;
-}
-
-/* Specific positioning for each arrow to align with text items */
-.arrowLine:nth-child(2) {
-  top: 25%; /* First text item - aligned with new layout */
-}
-
-.arrowLine:nth-child(3) {
-  top: 42%; /* Second text item - aligned with new layout */
-}
-
-.arrowLine:nth-child(4) {
-  top: 59%; /* Third text item - aligned with new layout */
-}
-
-.arrowLine:nth-child(5) {
-  top: 76%; /* Fourth text item - aligned with new layout */
-}
-
-.horizontalArrow {
-  position: relative;
-  width: 100%;
+  left: -20px;
+  right: -20px;
+  top: 23%; /* Position higher up where white meets blue on iceberg */
   height: 3px;
-  background-color: white;
-}
-
-.horizontalArrow::after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: -6px;
-  width: 0;
-  height: 0;
-  border-left: 15px solid white;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.6) 0%, 
+    rgba(255, 255, 255, 0.8) 50%, 
+    rgba(255, 255, 255, 0.6) 100%);
+  z-index: 20;
+  box-shadow: 
+    0 1px 4px rgba(255, 255, 255, 0.3),
+    0 -1px 4px rgba(255, 255, 255, 0.3);
 }
 
 /* Right side - Text content */
@@ -111,7 +82,8 @@
   padding-left: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 150px; /* Push content down to align below water line */
 }
 
 .mainTitle {
@@ -124,10 +96,11 @@
   text-align: center;
 }
 
+/* Drivers list styling */
 .driversList {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 50px;
   margin-top: 0;
   padding-top: 20px;
 }
@@ -136,7 +109,49 @@
   display: flex;
   align-items: center;
   min-height: 40px;
+  position: relative;
 }
+
+/* Arrows originating from within the iceberg */
+.icebergArrow {
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: white;
+  right: -120px; /* Start from inside iceberg, extend outward */
+  z-index: 25;
+}
+
+.icebergArrow::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid white;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+/* Position each arrow at different iceberg levels to align with text */
+.icebergArrow[data-level="1"] {
+  top: 40%; /* First level - aligns with first text item */
+}
+
+.icebergArrow[data-level="2"] {
+  top: 55%; /* Second level - aligns with second text item */
+}
+
+.icebergArrow[data-level="3"] {
+  top: 70%; /* Third level - aligns with third text item */
+}
+
+.icebergArrow[data-level="4"] {
+  top: 85%; /* Fourth level - aligns with fourth text item */
+}
+
+
 
 .driverText {
   font-size: 1.2rem;
@@ -149,11 +164,15 @@
 .driverText em {
   font-style: italic;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .driverText strong {
   font-weight: 600;
+  color: #FFD700; /* Gold color for visible problems */
 }
+
+
 
 /* Responsive design */
 @media (max-width: 1024px) {
@@ -171,6 +190,7 @@
   
   .rightContent {
     padding-left: 0;
+    padding-top: 40px; /* Reduce top padding on tablet */
   }
   
   .mainTitle {
@@ -190,7 +210,7 @@
 
 @media (max-width: 768px) {
   .keyDriversSection {
-    padding: 60px 0;
+    padding: var(--space-6) 0;
   }
   
   .mainTitle {
@@ -213,7 +233,11 @@
     width: 200px;
   }
   
-  .arrowLine {
+  .waterLine {
+    display: none;
+  }
+  
+  .icebergArrow {
     display: none;
   }
 }
@@ -229,5 +253,9 @@
   
   .driverText {
     font-size: 0.95rem;
+  }
+  
+  .rightContent {
+    padding-top: 20px; /* Minimal top padding on mobile */
   }
 }

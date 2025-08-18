@@ -1,6 +1,23 @@
+/* Override Section component padding for seamless connection */
+:global(#assessment) {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: white !important;
+}
+
+/* Override the global container padding for full-width background */
+:global(#assessment .container) {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 .assessmentSection {
-  padding: var(--space-8) 0;
+  padding: var(--space-8) var(--space-4);
   background: white;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .title {
@@ -25,7 +42,7 @@
 .processGrid {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
-  gap: var(--space-4);
+  gap: 0;
   align-items: center;
   margin-bottom: var(--space-8);
 }
@@ -49,7 +66,9 @@
   border-radius: var(--radius-2);
   text-align: center;
   border: 3px solid var(--color-accent);
-  min-height: 280px;
+  height: 100%;
+  max-width: 300px;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -107,10 +126,9 @@
 
 .bottomText {
   text-align: center;
-  background: var(--color-accent);
-  color: white;
-  padding: var(--space-5);
-  border-radius: var(--radius-2);
+  background: transparent;
+  color: #0a0a0a;
+  padding: var(--space-5) 0;
   margin-top: var(--space-7);
 }
 
@@ -118,4 +136,5 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #0a0a0a;
 }
