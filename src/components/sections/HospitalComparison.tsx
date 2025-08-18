@@ -95,10 +95,21 @@ function HospitalComparison() {
         
         <div className={styles.conclusion}>
           <p>Improving from a 3 star to 4 star rating can increase revenue between 13.4% — 17.6%</p>
-          <div className={styles.footnote}>
-            <a href="https://www.sciencedirect.com/science/article/pii/S1544319120300778" target="_blank" rel="noopener noreferrer">
-              https://www.sciencedirect.com/science/article/pii/S1544319120300778
-            </a>
+          
+          <div className={styles.references}>
+            <h3>Sources:</h3>
+            <ul>
+              <li>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1544319120300778" target="_blank" rel="noopener noreferrer">
+                  ScienceDirect: Hospital star ratings and financial performance
+                </a>
+              </li>
+              <li>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S1544319123000778" target="_blank" rel="noopener noreferrer">
+                  ScienceDirect: Hospital quality ratings and patient experience
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

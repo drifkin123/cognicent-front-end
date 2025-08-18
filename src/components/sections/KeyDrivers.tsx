@@ -55,6 +55,39 @@ function KeyDrivers() {
             </div>
           </div>
         </div>
+        
+        <div className={styles.references}>
+          <h3>Sources:</h3>
+          <ul>
+            <li>
+              <a 
+                href="https://www.aha.org/costsofcaring" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                American Hospital Association: The Cost of Caring - Challenges Facing America's Hospitals in 2025
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.netsuite.com/portal/resource/articles/erp/healthcare-industry-challenges.shtml" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                NetSuite: Healthcare Industry Challenges
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://guidehouse.com/-/media/www/site/insights/healthcare/2018/medicare-advantage-analysis.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Guidehouse: Medicare Advantage Analysis
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

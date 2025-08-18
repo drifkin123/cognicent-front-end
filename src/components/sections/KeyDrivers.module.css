@@ -172,7 +172,47 @@
   color: #FFD700; /* Gold color for visible problems */
 }
 
+.references {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  color: white;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+}
 
+.references h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-4);
+}
+
+.references ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.references li {
+  margin-bottom: var(--space-3);
+}
+
+.references a {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
+.references a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
 
 /* Responsive design */
 @media (max-width: 1024px) {

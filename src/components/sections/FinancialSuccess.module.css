@@ -94,6 +94,43 @@
   stroke-width: 2px !important;
 }
 
+.references {
+  margin-top: var(--space-8);
+  color: white;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.references h3 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-4);
+}
+
+.references ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: var(--space-3);
+}
+
+.references a {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.references a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .title {

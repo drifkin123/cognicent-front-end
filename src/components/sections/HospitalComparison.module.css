@@ -179,3 +179,39 @@
 .footnote a:hover {
   text-decoration: underline;
 }
+
+.references {
+  margin-top: var(--space-4);
+  text-align: center;
+}
+
+.references h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-3);
+}
+
+.references ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.references li {
+  margin-bottom: var(--space-2);
+}
+
+.references a {
+  color: #00BCD4;
+  text-decoration: none;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}

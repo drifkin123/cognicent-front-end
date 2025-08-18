@@ -19,6 +19,29 @@ function FinancialSuccess() {
             <img src="/images/hospital.svg" alt="Hospital building" className={styles.hospitalImage} />
           </div>
         </div>
+        <div className={styles.references}>
+          <h3>Sources:</h3>
+          <ul>
+            <li>
+              <a 
+                href="https://www.deloitte.com/us/en/Industries/life-sciences-health-care/articles/hospitals-patient-experience.html" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Deloitte: The value of patient experience - Hospitals with better patient-reported experience perform better financially
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.dialoghealth.com/post/patient-retention-statistics" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Dialog Health: Patient Retention Statistics
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
