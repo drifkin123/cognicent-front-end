@@ -20,13 +20,16 @@
     grid-template-columns: 1fr;
     min-height: 400px;
   }
+  
+  .leftCol {
+    min-height: 320px;
+  }
 }
 
 .leftCol {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-8);
   color: white;
   position: relative;
   z-index: 1;
@@ -39,9 +42,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/images/hospital-interior.jpg') center/cover;
-  background-size: cover;
-  background-position: center;
   filter: blur(3px);
   z-index: -2;
 }
@@ -58,27 +58,65 @@
 }
 
 .logoSection {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.logoSection::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 70%;
+  background: rgba(64, 64, 64, 0.7);
+  z-index: 0;
+  backdrop-filter: blur(4px);
+}
+
+.logoSection picture {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -1 !important;
+}
+
+.logoSection picture img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 .logo {
-  width: 180px;
-  height: 180px;
-  margin-bottom: var(--space-5);
+  width: 300px;
+  height: auto;
   filter: none;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
 }
 
 .companyName {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 4rem;
-  font-weight: 700;
   letter-spacing: 4px;
   margin: 0;
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 1;
 }
 
 .rightCol {
@@ -93,24 +131,106 @@
 }
 
 .visionTitle {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight:900;
   margin: 0 0 var(--space-6);
   color: white;
 }
 
 .visionText {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
+  font-weight: 700;
   margin: 0;
   color: var(--color-accent);
-  font-weight: 400;
 }
 
 .visionHighlight {
   color: var(--color-accent);
+}
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+  .companyName {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .visionTitle {
+    font-size: 2.8rem;
+  }
+  
+  .visionText {
+    font-size: 1.3rem;
+  }
+  
+  .logo {
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .companyName {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  
+  .visionTitle {
+    font-size: 2.5rem;
+  }
+  
+  .visionText {
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyName {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .visionTitle {
+    font-size: 2.2rem;
+  }
+  
+  .visionText {
+    font-size: 1.1rem;
+  }
+  
+  .logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .companyName {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .visionTitle {
+    font-size: 1.8rem;
+  }
+  
+  .visionText {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .logo {
+    width: 140px;
+  }
+  
+  .rightCol {
+    padding: var(--space-6);
+  }
 }
 
 
