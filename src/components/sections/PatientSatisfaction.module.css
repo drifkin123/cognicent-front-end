@@ -8,7 +8,7 @@
   position: relative;
   background-image: url('/images/hospital-wigh-greenery.png');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left 105%;
   background-size: auto 75%;
   min-height: 500px;
   display: flex;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .backgroundContainer {
     background-size: auto 30%;
     min-height: 400px;
@@ -114,4 +114,4 @@
   .darkerSection {
     height: 60px;
   }
-}
+} */

@@ -5,13 +5,13 @@ function HolisticApproach() {
   return (
     <Section id="opportunity">
       <div className={styles.opportunitySection}>
-        <h2 className={styles.title}>The Opportunity</h2>
+        <h1 className={styles.title}>The Opportunity</h1>
         <p className={styles.subtitle}>
           Cognicit uses a proven scientific assessment to identify, address, and improve the behavioral factors that lead to higher patient satisfaction and financial performance
         </p>
         
         <div className={styles.logoContainer}>
-          <img src="/images/cognicit_logo_square_cyan.svg" alt="Cognicit Logo" className={styles.logo} />
+          <img src="/images/cognicit_logo_bug.svg" alt="Cognicit Logo" className={styles.logo} />
           <h3 className={styles.brandName}>COGNICIT</h3>
         </div>
         

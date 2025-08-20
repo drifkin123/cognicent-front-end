@@ -5,8 +5,8 @@ function HospitalComparison() {
   return (
     <Section id="comparison">
       <div className={styles.comparisonContainer}>
-        <h2 className={styles.title}>High -vs - Low</h2>
-        
+        <h2 className={styles.title}>High - vs - Low</h2>
+
         <div className={styles.hospitalsGrid}>
           <div className={styles.hospital}>
             <div className={styles.hospitalHeader}>
@@ -20,7 +20,7 @@ function HospitalComparison() {
                 <div className={styles.star}></div>
               </div>
             </div>
-            
+
             <div className={styles.metricsTable}>
               <div className={styles.metric}>
                 <span className={styles.label}>Claims denial average</span>
@@ -48,13 +48,7 @@ function HospitalComparison() {
               </div>
             </div>
           </div>
-          
-          <div className={styles.distanceIndicator}>
-            <div className={styles.distanceLine}></div>
-            <div className={styles.distanceText}>10 minutes apart</div>
-            <div className={styles.distanceLine}></div>
-          </div>
-          
+
           <div className={styles.hospital}>
             <div className={styles.hospitalHeader}>
               <h3>Westchester Medical Center, NY</h3>
@@ -63,7 +57,7 @@ function HospitalComparison() {
                 <div className={styles.star}></div>
               </div>
             </div>
-            
+
             <div className={styles.metricsTable}>
               <div className={styles.metric}>
                 <span className={styles.label}>Claims denial average</span>
@@ -92,25 +86,24 @@ function HospitalComparison() {
             </div>
           </div>
         </div>
-        
+
         <div className={styles.conclusion}>
           <p>Improving from a 3 star to 4 star rating can increase revenue between 13.4% — 17.6%</p>
-          
-          <div className={styles.references}>
-            <h3>Sources:</h3>
-            <ul>
-              <li>
-                <a href="https://www.sciencedirect.com/science/article/pii/S1544319120300778" target="_blank" rel="noopener noreferrer">
-                  ScienceDirect: Hospital star ratings and financial performance
-                </a>
-              </li>
-              <li>
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S1544319123000778" target="_blank" rel="noopener noreferrer">
-                  ScienceDirect: Hospital quality ratings and patient experience
-                </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div className={styles.references}>
+          <h3>Sources:</h3>
+          <ul>
+            <li>
+              <a href="https://www.sciencedirect.com/science/article/pii/S1544319120300778" target="_blank" rel="noopener noreferrer">
+                ScienceDirect: Hospital star ratings and financial performance
+              </a>
+            </li>
+            <li>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S1544319123000778" target="_blank" rel="noopener noreferrer">
+                ScienceDirect: Hospital quality ratings and patient experience
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </Section>

@@ -15,11 +15,11 @@
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--space-8);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 60vh;
+  position: relative;
 }
 
 .textContent {
@@ -28,7 +28,7 @@
 }
 
 .title {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.1;
@@ -47,7 +47,7 @@
 }
 
 .benefits li {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-1);
   color: white;
   font-weight: 400;
   position: relative;
@@ -68,20 +68,19 @@
 }
 
 .hospitalGraphic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  scale: 2;
+  position: absolute;
+  bottom: 20px;
+  right: -150px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .hospitalImage {
-  width: 500px;
+  width: 400px;
   height: auto;
-  opacity: 1;
-  transform: translateX(50px);
-  /* Use drop-shadow instead of filters for better visibility */
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+  opacity: 0.3;
+  transform: translateX(0);
 }
 
 /* Override SVG colors to ensure visibility */
@@ -95,7 +94,6 @@
 }
 
 .references {
-  margin-top: var(--space-8);
   color: white;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
@@ -148,8 +146,6 @@
 
 @media (max-width: 900px) {
   .content {
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
     text-align: center;
   }
   
@@ -166,7 +162,6 @@
   
   .hospitalImage {
     width: 300px;
-    transform: none;
   }
 }
 

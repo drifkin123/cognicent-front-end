@@ -1,6 +1,15 @@
-/* Main section with blue gradient background matching the slide */
+/* Main section with sharp transition at iceberg waterline */
 .keyDriversSection {
-  background: linear-gradient(135deg, #2E8BC0 0%, #1F5582 50%, #0F3A5F 100%);
+  background: linear-gradient(180deg, 
+    #5CBDE8 0%,           /* Light sky blue at top */
+    #4FB3E1 20%,          /* Lighter blue */
+    #3A9FD4 28%,          /* Medium-light blue - gradual approach */
+    #2E8BC0 32%,          /* Just before the sharp transition */
+    #1F5582 34%,          /* Sharp drop to darker blue - iceberg waterline */
+    #144466 36%,          /* Immediate deeper blue */
+    #0F3A5F 40%,          /* Continuing dark */
+    #0A2847 100%          /* Deep dark blue at bottom */
+  );
   padding: var(--space-8) 0;
   color: white;
   position: relative;
@@ -11,12 +20,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .content {
   display: flex;
   align-items: center;
-  gap: 60px;
   min-height: 500px;
 }
 
@@ -29,14 +39,14 @@
 
 .hospitalContainer {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 }
 
 .hospitalImage {
-  width: 180px;
+  width: 280px;
   height: auto;
   /* Remove filter to show original colors */
 }
@@ -51,7 +61,7 @@
 }
 
 .icebergImage {
-  width: 280px;
+  width: 350px;
   height: auto;
   /* Remove filter to show original colors */
   opacity: 0.9;
@@ -59,22 +69,7 @@
   z-index: 5;
 }
 
-/* Water line positioned where white changes to blue on iceberg */
-.waterLine {
-  position: absolute;
-  left: -20px;
-  right: -20px;
-  top: 23%; /* Position higher up where white meets blue on iceberg */
-  height: 3px;
-  background: linear-gradient(90deg, 
-    rgba(255, 255, 255, 0.6) 0%, 
-    rgba(255, 255, 255, 0.8) 50%, 
-    rgba(255, 255, 255, 0.6) 100%);
-  z-index: 20;
-  box-shadow: 
-    0 1px 4px rgba(255, 255, 255, 0.3),
-    0 -1px 4px rgba(255, 255, 255, 0.3);
-}
+
 
 /* Right side - Text content */
 .rightContent {
@@ -82,12 +77,12 @@
   padding-left: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 150px; /* Push content down to align below water line */
+  justify-content: center; /* Center content vertically within the darker blue zone */
+  padding-top: 100px; /* Reduced padding since no waterline alignment needed */
 }
 
 .mainTitle {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -100,7 +95,7 @@
 .driversList {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   margin-top: 0;
   padding-top: 20px;
 }
@@ -134,25 +129,6 @@
   border-bottom: 11px solid transparent;
 }
 
-/* Position each arrow at different iceberg levels to align with text */
-.icebergArrow[data-level="1"] {
-  top: 40%; /* First level - aligns with first text item */
-}
-
-.icebergArrow[data-level="2"] {
-  top: 55%; /* Second level - aligns with second text item */
-}
-
-.icebergArrow[data-level="3"] {
-  top: 70%; /* Third level - aligns with third text item */
-}
-
-.icebergArrow[data-level="4"] {
-  top: 85%; /* Fourth level - aligns with fourth text item */
-}
-
-
-
 .driverText {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -177,7 +153,7 @@
   padding-top: var(--space-6);
   color: white;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .references h3 {
@@ -192,7 +168,6 @@
   padding: 0;
   margin: 0;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .references li {
@@ -216,6 +191,20 @@
 
 /* Responsive design */
 @media (max-width: 1024px) {
+  .keyDriversSection {
+    /* Adjust gradient for tablet - transition happens earlier since content is stacked */
+    background: linear-gradient(180deg, 
+      #5CBDE8 0%,           /* Light sky blue at top */
+      #4FB3E1 15%,          /* Lighter blue */
+      #3A9FD4 22%,          /* Medium-light blue - gradual approach */
+      #2E8BC0 26%,          /* Just before the sharp transition */
+      #1F5582 28%,          /* Sharp drop to darker blue - iceberg waterline */
+      #144466 30%,          /* Immediate deeper blue */
+      #0F3A5F 34%,          /* Continuing dark */
+      #0A2847 100%          /* Deep dark blue at bottom */
+    );
+  }
+
   .content {
     flex-direction: column;
     gap: 40px;
@@ -244,6 +233,7 @@
   }
   
   .icebergImage {
+    margin-top: 100px;
     width: 240px;
   }
 }
@@ -251,6 +241,17 @@
 @media (max-width: 768px) {
   .keyDriversSection {
     padding: var(--space-6) 0;
+    /* Adjust gradient for mobile - transition happens even earlier */
+    background: linear-gradient(180deg, 
+      #5CBDE8 0%,           /* Light sky blue at top */
+      #4FB3E1 10%,          /* Lighter blue */
+      #3A9FD4 18%,          /* Medium-light blue - gradual approach */
+      #2E8BC0 22%,          /* Just before the sharp transition */
+      #1F5582 24%,          /* Sharp drop to darker blue - iceberg waterline */
+      #144466 26%,          /* Immediate deeper blue */
+      #0F3A5F 30%,          /* Continuing dark */
+      #0A2847 100%          /* Deep dark blue at bottom */
+    );
   }
   
   .mainTitle {
@@ -270,11 +271,8 @@
   }
   
   .icebergImage {
+    margin-top: 100px;
     width: 200px;
-  }
-  
-  .waterLine {
-    display: none;
   }
   
   .icebergArrow {
@@ -297,5 +295,9 @@
   
   .rightContent {
     padding-top: 20px; /* Minimal top padding on mobile */
+  }
+
+  .icebergImage {
+    margin-top: 0;
   }
 }
