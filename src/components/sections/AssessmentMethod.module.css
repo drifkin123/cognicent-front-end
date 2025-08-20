@@ -30,21 +30,23 @@
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  color: var(--color-accent);
-  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #4788ba;
   margin: 0 auto var(--space-8);
-  max-width: 800px;
-  font-weight: 500;
+  max-width: 900px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .processGrid {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
   gap: 0;
   align-items: center;
   margin-bottom: var(--space-8);
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
@@ -53,7 +55,7 @@
     gap: var(--space-6);
     text-align: center;
   }
-  
+
   .plus,
   .equals {
     display: none;
@@ -67,7 +69,7 @@
   text-align: center;
   border: 3px solid var(--color-accent);
   height: 100%;
-  max-width: 300px;
+  width: 250px;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -127,7 +129,7 @@
 .bottomText {
   text-align: center;
   background: transparent;
-  color: #0a0a0a;
+
   padding: var(--space-5) 0;
   margin-top: var(--space-7);
 }
@@ -136,5 +138,5 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #0a0a0a;
+  color: #4788ba;
 }

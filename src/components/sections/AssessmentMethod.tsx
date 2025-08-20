@@ -5,7 +5,6 @@ function AssessmentMethod() {
   return (
     <Section id="assessment">
       <div className={styles.assessmentSection}>
-        <h2 className={styles.title}>The Opportunity</h2>
         <p className={styles.subtitle}>
           By testing a representative sample of hospital employees, Cognicit uses proven scientific approaches to map cognition, emotion, and decision-making behaviors.
         </p>

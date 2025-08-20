@@ -2,7 +2,8 @@
   --color-bg: #ffffff;
   --color-text: #0a0a0a;
   --color-muted: #4a4a4a;
-  --color-accent: #00bcd4; /* cyan */
+  --color-accent: #4788ba;
+  /* cyan */
   --color-accent-dark: #0097a7;
   --max-content-width: 1200px;
   --space-1: 4px;
@@ -26,5 +27,3 @@
     --color-muted: #4a4a4a;
   }
 }
-
-

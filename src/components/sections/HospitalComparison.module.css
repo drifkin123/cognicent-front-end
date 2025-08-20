@@ -39,6 +39,7 @@
 .hospital {
   background: white;
   overflow: hidden;
+  flex: 1;
 }
 
 .hospitalHeader {
@@ -130,7 +131,7 @@
 
 .value {
   font-weight: 600;
-  color: #00BCD4;
+  color: #4788ba;
   text-align: right;
 }
 
@@ -152,7 +153,7 @@
 }
 
 .footnote a {
-  color: #00BCD4;
+  color: #4788ba;
   text-decoration: none;
 }
 
@@ -186,7 +187,7 @@
 }
 
 .references a {
-  color: #00BCD4;
+  color: #4788ba;
   text-decoration: underline;
   font-size: 0.95rem;
   line-height: 1.4;

@@ -1,6 +1,6 @@
 .riskSection {
+  background-color: #f8f9fa !important;
   padding: var(--space-8) var(--space-4);
-  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,10 +12,10 @@
 .title {
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   margin: 0 0 var(--space-8);
-  color: #5DADE2;
+  color: #4788ba;
   max-width: 1000px;
   line-height: 1.3;
 }
@@ -39,7 +39,7 @@
 
 .riskTable th {
   background: #f8f9fa;
-  padding: 20px 16px;
+  padding: 12px 16px;
   text-align: center;
   font-weight: 600;
   border-bottom: 2px solid #dee2e6;
@@ -47,7 +47,7 @@
   font-size: 0.85rem;
   vertical-align: middle;
   line-height: 1.2;
-  width: 12.5%; /* Equal width for all 8 columns */
+  width: 12.86%; /* Adjusted width for remaining 7 columns */
 }
 
 .departmentHeader {
@@ -55,15 +55,15 @@
   background: #5DADE2 !important;
   color: white !important;
   font-weight: 700 !important;
-  width: 12.5% !important;
+  width: 20% !important; /* Wider for department names */
 }
 
 .riskTable td {
-  padding: 20px 16px;
+  padding: 4px 12px;
   border-bottom: 1px solid #f1f3f4;
   vertical-align: middle;
   text-align: center;
-  width: 12.5%; /* Equal width for all columns */
+  width: 12.86%; /* Adjusted width for remaining 7 columns */
 }
 
 .riskTable td:first-child {
@@ -71,6 +71,7 @@
   font-weight: 600;
   color: #2c3e50;
   background: #f8f9fa;
+  width: 20% !important; /* Wider for department names */
 }
 
 .riskTable tbody tr:hover {
@@ -136,7 +137,20 @@
   
   .riskTable th,
   .riskTable td {
-    padding: 12px 8px;
+    padding: 4px 8px;
+  }
+  
+  .departmentHeader {
+    width: 22% !important; /* Slightly wider for medium screens */
+  }
+  
+  .riskTable td:first-child {
+    width: 22% !important; /* Slightly wider for medium screens */
+  }
+  
+  .riskTable th:not(.departmentHeader),
+  .riskTable td:not(:first-child) {
+    width: 11.14% !important; /* Adjusted for remaining 7 columns */
   }
   
   .low, .moderate, .high, .critical {
@@ -158,8 +172,21 @@
   
   .riskTable th,
   .riskTable td {
-    padding: 8px 6px;
+    padding: 4px 6px;
     font-size: 0.7rem;
+  }
+  
+  .departmentHeader {
+    width: 25% !important; /* Even wider for small screens */
+  }
+  
+  .riskTable td:first-child {
+    width: 25% !important; /* Even wider for small screens */
+  }
+  
+  .riskTable th:not(.departmentHeader),
+  .riskTable td:not(:first-child) {
+    width: 10.71% !important; /* Adjusted for remaining 7 columns */
   }
   
   .low, .moderate, .high, .critical {

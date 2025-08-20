@@ -33,10 +33,10 @@
 .subtitle {
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #00bcd4;
+  color: #4788ba;
   margin: 0 auto var(--space-8);
   max-width: 900px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .logoContainer {
