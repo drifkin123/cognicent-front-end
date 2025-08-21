@@ -94,11 +94,6 @@ function HospitalComparison() {
           <h3>Sources:</h3>
           <ul>
             <li>
-              <a href="https://www.sciencedirect.com/science/article/pii/S1544319120300778" target="_blank" rel="noopener noreferrer">
-                ScienceDirect: Hospital star ratings and financial performance
-              </a>
-            </li>
-            <li>
               <a href="https://www.sciencedirect.com/science/article/abs/pii/S1544319123000778" target="_blank" rel="noopener noreferrer">
                 ScienceDirect: Hospital quality ratings and patient experience
               </a>
