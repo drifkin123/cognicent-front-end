@@ -1,6 +1,5 @@
 .profilesSection {
   padding: var(--space-8) var(--space-4);
-  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +9,7 @@
 }
 
 .title {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -51,34 +50,44 @@
 }
 
 .tableHeader {
-  background: #2c3e50 !important;
+  background: #5DADE2 !important;
   color: white !important;
-  padding: 20px 16px;
+  padding: 12px 16px;
   text-align: center;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.85rem;
   border-bottom: 2px solid #dee2e6;
+  vertical-align: middle;
+  line-height: 1.2;
 }
 
 .sectionHeader {
-  background: #34495e !important;
-  color: white !important;
-  padding: 16px;
+  background: #f8f9fa !important;
+  color: #2c3e50 !important;
+  padding: 12px 16px;
   text-align: center;
   font-weight: 600;
-  font-size: 0.9rem;
-  border-bottom: 1px solid #dee2e6;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #dee2e6;
+  vertical-align: middle;
+  line-height: 1.2;
 }
 
 .profileTable td {
-  padding: 12px 16px;
+  padding: 4px 12px;
   border-bottom: 1px solid #f1f3f4;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.profileTable td:last-child {
+  text-align: center;
   vertical-align: middle;
 }
 
 .trait {
-  text-align: left;
-  font-weight: 500;
+  text-align: center !important;
+  font-weight: 600;
   color: #2c3e50;
   background: #f8f9fa;
   width: 60%;
@@ -92,38 +101,38 @@
   background: #f0f0f0;
 }
 
-/* Value styling similar to risk assessment but with different colors */
+/* Value styling to match risk assessment table */
 .low {
-  background: #27AE60 !important;
+  background: #2ECC71 !important;
   color: white !important;
   text-align: center;
   font-weight: 600;
-  border-radius: 15px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 6px 16px;
   display: inline-block;
   font-size: 0.8rem;
-  min-width: 60px;
+  min-width: 70px;
 }
 
 .lowModerate {
-  background: #52C882 !important;
+  background: #58D68D !important;
   color: white !important;
   text-align: center;
   font-weight: 600;
-  border-radius: 15px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 6px 16px;
   display: inline-block;
   font-size: 0.8rem;
   min-width: 90px;
 }
 
 .moderate {
-  background: #F39C12 !important;
+  background: #F1C40F !important;
   color: white !important;
   text-align: center;
   font-weight: 600;
-  border-radius: 15px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 6px 16px;
   display: inline-block;
   font-size: 0.8rem;
   min-width: 70px;
@@ -134,20 +143,20 @@
   color: white !important;
   text-align: center;
   font-weight: 600;
-  border-radius: 15px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 6px 16px;
   display: inline-block;
   font-size: 0.8rem;
-  min-width: 60px;
+  min-width: 70px;
 }
 
 .veryHigh {
-  background: #C0392B !important;
+  background: #E74C3C !important;
   color: white !important;
   text-align: center;
   font-weight: 600;
-  border-radius: 15px;
-  padding: 6px 12px;
+  border-radius: 20px;
+  padding: 6px 16px;
   display: inline-block;
   font-size: 0.8rem;
   min-width: 80px;
@@ -164,7 +173,7 @@
   }
 
   .profileTable td {
-    padding: 10px 12px;
+    padding: 4px 8px;
   }
 
   .low,
@@ -172,17 +181,17 @@
   .moderate,
   .high,
   .veryHigh {
-    padding: 4px 8px;
+    padding: 4px 12px;
     font-size: 0.75rem;
-    min-width: 50px;
+    min-width: 60px;
   }
 
   .lowModerate {
-    min-width: 70px;
+    min-width: 75px;
   }
 
   .veryHigh {
-    min-width: 65px;
+    min-width: 70px;
   }
 }
 
@@ -204,18 +213,18 @@
   }
 
   .profileTable td {
-    padding: 8px 10px;
-    font-size: 0.75rem;
+    padding: 4px 6px;
+    font-size: 0.7rem;
   }
 
   .tableHeader {
-    font-size: 0.85rem;
-    padding: 16px 12px;
+    font-size: 0.75rem;
+    padding: 12px 8px;
   }
 
   .sectionHeader {
-    font-size: 0.8rem;
-    padding: 12px;
+    font-size: 0.7rem;
+    padding: 8px;
   }
 
   .low,
@@ -223,16 +232,16 @@
   .moderate,
   .high,
   .veryHigh {
-    padding: 3px 6px;
-    font-size: 0.7rem;
-    min-width: 45px;
+    padding: 3px 8px;
+    font-size: 0.65rem;
+    min-width: 50px;
   }
 
   .lowModerate {
-    min-width: 65px;
+    min-width: 70px;
   }
 
   .veryHigh {
-    min-width: 60px;
+    min-width: 65px;
   }
 }

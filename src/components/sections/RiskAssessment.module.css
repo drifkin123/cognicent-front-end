@@ -10,7 +10,7 @@
 }
 
 .title {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -24,7 +24,7 @@
   overflow-x: auto;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border: 1px solid #e0e0e0;
   max-width: 1400px;
   width: 100%;
@@ -47,7 +47,8 @@
   font-size: 0.85rem;
   vertical-align: middle;
   line-height: 1.2;
-  width: 12.86%; /* Adjusted width for remaining 7 columns */
+  width: 12.86%;
+  /* Adjusted width for remaining 7 columns */
 }
 
 .departmentHeader {
@@ -55,7 +56,8 @@
   background: #5DADE2 !important;
   color: white !important;
   font-weight: 700 !important;
-  width: 20% !important; /* Wider for department names */
+  width: 20% !important;
+  /* Wider for department names */
 }
 
 .riskTable td {
@@ -63,15 +65,18 @@
   border-bottom: 1px solid #f1f3f4;
   vertical-align: middle;
   text-align: center;
-  width: 12.86%; /* Adjusted width for remaining 7 columns */
+  width: 12.86%;
+  /* Adjusted width for remaining 7 columns */
 }
 
 .riskTable td:first-child {
-  text-align: center; /* Center department names too */
+  text-align: center;
+  /* Center department names too */
   font-weight: 600;
   color: #2c3e50;
   background: #f8f9fa;
-  width: 20% !important; /* Wider for department names */
+  width: 20% !important;
+  /* Wider for department names */
 }
 
 .riskTable tbody tr:hover {
@@ -79,7 +84,8 @@
 }
 
 .riskTable tbody tr:hover td:first-child {
-  background: #f0f0f0; /* Slightly darker on hover for first column */
+  background: #f0f0f0;
+  /* Slightly darker on hover for first column */
 }
 
 .low {
@@ -134,26 +140,32 @@
   .riskTable {
     font-size: 0.8rem;
   }
-  
+
   .riskTable th,
   .riskTable td {
     padding: 4px 8px;
   }
-  
+
   .departmentHeader {
-    width: 22% !important; /* Slightly wider for medium screens */
+    width: 22% !important;
+    /* Slightly wider for medium screens */
   }
-  
+
   .riskTable td:first-child {
-    width: 22% !important; /* Slightly wider for medium screens */
+    width: 22% !important;
+    /* Slightly wider for medium screens */
   }
-  
+
   .riskTable th:not(.departmentHeader),
   .riskTable td:not(:first-child) {
-    width: 11.14% !important; /* Adjusted for remaining 7 columns */
+    width: 11.14% !important;
+    /* Adjusted for remaining 7 columns */
   }
-  
-  .low, .moderate, .high, .critical {
+
+  .low,
+  .moderate,
+  .high,
+  .critical {
     padding: 4px 12px;
     font-size: 0.75rem;
     min-width: 60px;
@@ -165,31 +177,37 @@
     font-size: 1.8rem;
     padding: 0 var(--space-4);
   }
-  
+
   .tableContainer {
     margin: 0 var(--space-4);
   }
-  
+
   .riskTable th,
   .riskTable td {
     padding: 4px 6px;
     font-size: 0.7rem;
   }
-  
+
   .departmentHeader {
-    width: 25% !important; /* Even wider for small screens */
+    width: 25% !important;
+    /* Even wider for small screens */
   }
-  
+
   .riskTable td:first-child {
-    width: 25% !important; /* Even wider for small screens */
+    width: 25% !important;
+    /* Even wider for small screens */
   }
-  
+
   .riskTable th:not(.departmentHeader),
   .riskTable td:not(:first-child) {
-    width: 10.71% !important; /* Adjusted for remaining 7 columns */
+    width: 10.71% !important;
+    /* Adjusted for remaining 7 columns */
   }
-  
-  .low, .moderate, .high, .critical {
+
+  .low,
+  .moderate,
+  .high,
+  .critical {
     padding: 3px 8px;
     font-size: 0.65rem;
     min-width: 50px;

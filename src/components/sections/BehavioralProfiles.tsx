@@ -8,7 +8,7 @@ function BehavioralProfiles() {
         <h2 className={styles.title}>
           Cognicit recognizes that ideal behaviors and traits vary by job role
         </h2>
-        
+
         <div className={styles.tablesContainer}>
           {/* Radiologist Table */}
           <div className={styles.tableWrapper}>
@@ -29,23 +29,23 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Openness</td>
-                    <td className={styles.moderate}>moderate</td>
+                    <td><div className={styles.moderate}>moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Conscientiousness</td>
-                    <td className={styles.high}>high</td>
+                    <td><div className={styles.high}>high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Extraversion</td>
-                    <td className={styles.lowModerate}>low moderate</td>
+                    <td><div className={styles.lowModerate}>low moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Agreeableness</td>
-                    <td className={styles.moderate}>moderate</td>
+                    <td><div className={styles.moderate}>moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Personality Stability</td>
-                    <td className={styles.high}>high</td>
+                    <td><div className={styles.high}>high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.sectionHeader} colSpan={2}>
@@ -54,19 +54,19 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Personal Responsibility</td>
-                    <td className={styles.high}>high</td>
+                    <td><div className={styles.high}>high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Autonomy</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Risk-Taking</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Teamwork</td>
-                    <td className={styles.lowModerate}>low moderate</td>
+                    <td ><div className={styles.lowModerate}>low moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.sectionHeader} colSpan={2}>
@@ -75,27 +75,27 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Anchoring</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Confirmation</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Self-serving</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Overconfidence</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Framing</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>General Cognition</td>
-                    <td className={styles.high}>high</td>
+                    <td><div className={styles.high}>high</div></td>
                   </tr>
                 </tbody>
               </table>
@@ -121,23 +121,23 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Openness</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Conscientiousness</td>
-                    <td className={styles.moderate}>moderate</td>
+                    <td><div className={styles.moderate}>moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Extraversion</td>
-                    <td className={styles.moderate}>moderate</td>
+                    <td ><div className={styles.moderate}>moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Agreeableness</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Personality Stability</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.sectionHeader} colSpan={2}>
@@ -146,19 +146,19 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Personal Responsibility</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Autonomy</td>
-                    <td className={styles.moderate}>moderate</td>
+                    <td><div className={styles.moderate}>moderate</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Risk-Taking</td>
-                    <td className={styles.high}>high</td>
+                    <td><div className={styles.high}>high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Teamwork</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                   <tr>
                     <td className={styles.sectionHeader} colSpan={2}>
@@ -167,27 +167,27 @@ function BehavioralProfiles() {
                   </tr>
                   <tr>
                     <td className={styles.trait}>Anchoring</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Confirmation</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Self-serving</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Overconfidence</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>Framing</td>
-                    <td className={styles.low}>low</td>
+                    <td><div className={styles.low}>low</div></td>
                   </tr>
                   <tr>
                     <td className={styles.trait}>General Cognition</td>
-                    <td className={styles.veryHigh}>very high</td>
+                    <td><div className={styles.veryHigh}>very high</div></td>
                   </tr>
                 </tbody>
               </table>

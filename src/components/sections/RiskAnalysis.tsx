@@ -29,12 +29,12 @@ function RiskAnalysis() {
                 <tr>
                   <td className={styles.departmentCell}>Emergency Medicine</td>
                   <td className={styles.percentageCell}>35%</td>
-                  <td className={styles.lowRisk}>Low</td>
-                  <td className={styles.moderateRisk}>Moderate</td>
-                  <td className={styles.criticalRisk}>Critical</td>
-                  <td className={styles.highRisk}>High</td>
-                  <td className={styles.highRisk}>High</td>
-                  <td className={styles.criticalRisk}>Critical</td>
+                  <td><div className={styles.lowRisk}>Low</div></td>
+                  <td><div className={styles.moderateRisk}>Moderate</div></td>
+                  <td><div className={styles.criticalRisk}>Critical</div></td>
+                  <td><div className={styles.highRisk}>High</div></td>
+                  <td><div className={styles.highRisk}>High</div></td>
+                  <td><div className={styles.criticalRisk}>Critical</div></td>
                 </tr>
               </tbody>
             </table>
