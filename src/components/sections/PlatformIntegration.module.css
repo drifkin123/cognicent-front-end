@@ -27,9 +27,16 @@
   font-size: var(--font-size-subtitle);
   line-height: 1.5;
   color: #4788ba;
-  margin: 0 auto var(--space-8);
+  margin: 0 auto var(--space-4);
   max-width: 900px;
   font-weight: 800;
+}
+
+.integrationImage {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .quarterlyTimeline {
