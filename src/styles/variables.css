@@ -18,6 +18,27 @@
   --space-10: 96px;
   --radius-1: 6px;
   --radius-2: 12px;
+  
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem;  /* 36px */
+  --font-size-5xl: 3rem;     /* 48px */
+  --font-size-6xl: 3.75rem;  /* 60px */
+  
+  /* Standard Typography Sizes */
+  --font-size-hero-title: var(--font-size-5xl);      /* Main hero titles */
+  --font-size-section-title: var(--font-size-4xl);   /* Section titles */
+  --font-size-subtitle: var(--font-size-xl);         /* Subtitles */
+  --font-size-body: var(--font-size-base);           /* Body text, paragraphs */
+  --font-size-caption: var(--font-size-sm);          /* Small text, captions */
+  --font-size-table-header: var(--font-size-sm);     /* Table headers */
+  --font-size-table-cell: var(--font-size-sm);       /* Table cells */
 }
 
 @media (prefers-color-scheme: dark) {

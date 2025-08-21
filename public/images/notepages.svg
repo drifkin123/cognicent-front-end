@@ -220,6 +220,20 @@
         font-weight: 700;
       }
 
+      .st100 {
+        fill: #4788ba;
+        font-family: MyriadPro-Bold, 'Myriad Pro';
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .st101 {
+        fill: #4788ba;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 36px;
+        font-weight: 400;
+      }
+
       .st51 {
         fill: #f3f3f3;
       }
@@ -2998,10 +3012,29 @@
         <polygon class="st64" points="3533.9 902.4 3524.9 906.8 3496.8 920.8 3494.9 917 3522.6 903.3 3531.7 898.7 3531.3 899.6 3530.6 901.1 3532.2 901.7 3533.9 902.4"/>
         <polygon class="st64" points="3540.5 904.9 3530.1 909.5 3524.9 906.8 3523.5 906.1 3522 905.3 3522.4 904 3522.6 903.3 3524.3 896.5 3534.7 891.9 3531.7 898.7 3531.3 899.6 3530.6 901.1 3532.2 901.7 3533.9 902.4 3540.5 904.9"/>
       </g>
+      <!-- Q1 Content -->
       <text class="st50" transform="translate(561.6 749.2)"><tspan x="0" y="0">Q1</tspan></text>
+      <text class="st100" transform="translate(620.5 1120)" text-anchor="middle"><tspan x="0" y="0">Assess Staff</tspan></text>
+      <text class="st101" transform="translate(620.5 1180)" text-anchor="middle"><tspan x="0" y="0">Full assessment = 1 hr</tspan></text>
+      
+      <!-- Q2 Content -->
       <text class="st50" transform="translate(1521.6 749.2)"><tspan x="0" y="0">Q2</tspan></text>
+      <text class="st100" transform="translate(1580 1120)" text-anchor="middle"><tspan x="0" y="0">Analyze Findings</tspan></text>
+      <text class="st101" transform="translate(1580 1180)" text-anchor="middle"><tspan x="0" y="0">by Role, Team,</tspan></text>
+      <text class="st101" transform="translate(1580 1220)" text-anchor="middle"><tspan x="0" y="0">Manager, Care Domains</tspan></text>
+      
+      <!-- Q3 Content -->
       <text class="st50" transform="translate(2481.6 749.2)"><tspan x="0" y="0">Q3</tspan></text>
+      <text class="st100" transform="translate(2550 1080)" text-anchor="middle"><tspan x="0" y="0">Mid-year</tspan></text>
+      <text class="st100" transform="translate(2550 1130)" text-anchor="middle"><tspan x="0" y="0">Staff "Pulse Check"</tspan></text>
+      <text class="st101" transform="translate(2550 1180)" text-anchor="middle"><tspan x="0" y="0">mini assessment =</tspan></text>
+      <text class="st101" transform="translate(2550 1220)" text-anchor="middle"><tspan x="0" y="0">30 min</tspan></text>
+      
+      <!-- Q4 Content -->
       <text class="st50" transform="translate(3441.6 749.2)"><tspan x="0" y="0">Q4</tspan></text>
+      <text class="st100" transform="translate(3500 1120)" text-anchor="middle"><tspan x="0" y="0">Year-end</tspan></text>
+      <text class="st100" transform="translate(3500 1170)" text-anchor="middle"><tspan x="0" y="0">Cognicit Trend Analysis</tspan></text>
+      <text class="st101" transform="translate(3500 1220)" text-anchor="middle"><tspan x="0" y="0">and Recommendations</tspan></text>
     </g>
   </g>
 </svg>

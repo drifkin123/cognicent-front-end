@@ -29,7 +29,7 @@
 
 .title {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 3.5rem;
+  font-size: var(--font-size-hero-title);
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 var(--space-8);
@@ -42,7 +42,7 @@
   padding: 0;
   margin: 0;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
   line-height: 1.6;
 }
 
@@ -59,7 +59,7 @@
   position: absolute;
   left: 0;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: var(--font-size-xl);
 }
 
 .benefits li em {
@@ -100,7 +100,7 @@
 
 .references h3 {
   color: white;
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   margin: 0 0 var(--space-4);
 }
@@ -118,7 +118,7 @@
 .references a {
   color: white;
   text-decoration: underline;
-  font-size: 0.95rem;
+  font-size: var(--font-size-base);
   line-height: 1.4;
   opacity: 0.9;
   transition: opacity 0.2s ease;
@@ -132,11 +132,11 @@
 /* Responsive Design */
 @media (max-width: 1200px) {
   .title {
-    font-size: 3rem;
+    font-size: var(--font-size-4xl);
   }
   
   .benefits {
-    font-size: 1.3rem;
+    font-size: var(--font-size-xl);
   }
   
   .hospitalImage {
@@ -150,11 +150,11 @@
   }
   
   .title {
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
   }
   
   .benefits {
-    font-size: 1.2rem;
+    font-size: var(--font-size-xl);
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
@@ -172,11 +172,11 @@
   }
   
   .title {
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
   }
   
   .benefits {
-    font-size: 1.1rem;
+    font-size: var(--font-size-lg);
   }
   
   .benefits li {

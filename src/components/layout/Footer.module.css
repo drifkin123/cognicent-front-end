@@ -16,6 +16,6 @@
 }
 
 .copy { color: var(--color-muted); }
-.legal p { margin: 4px 0; color: #333; font-size: 14px; }
+.legal p { margin: 4px 0; color: #333; font-size: var(--font-size-caption); }
 
 

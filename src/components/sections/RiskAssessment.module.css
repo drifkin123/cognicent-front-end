@@ -11,7 +11,7 @@
 
 .title {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--font-size-section-title);
   font-weight: 700;
   text-align: center;
   margin: 0 0 var(--space-8);
@@ -33,7 +33,7 @@
 .riskTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: var(--font-size-table-cell);
   background: white;
 }
 
@@ -44,7 +44,7 @@
   font-weight: 600;
   border-bottom: 2px solid #dee2e6;
   color: #2c3e50;
-  font-size: 0.85rem;
+  font-size: var(--font-size-table-header);
   vertical-align: middle;
   line-height: 1.2;
   width: 12.86%;
@@ -96,7 +96,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -108,7 +108,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -120,7 +120,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -132,13 +132,13 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
 @media (max-width: 1200px) {
   .riskTable {
-    font-size: 0.8rem;
+    font-size: var(--font-size-caption);
   }
 
   .riskTable th,
@@ -167,14 +167,14 @@
   .high,
   .critical {
     padding: 4px 12px;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     min-width: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .title {
-    font-size: 1.8rem;
+    font-size: var(--font-size-xl);
     padding: 0 var(--space-4);
   }
 
@@ -185,7 +185,7 @@
   .riskTable th,
   .riskTable td {
     padding: 4px 6px;
-    font-size: 0.7rem;
+    font-size: var(--font-size-xs);
   }
 
   .departmentHeader {
@@ -209,7 +209,7 @@
   .high,
   .critical {
     padding: 3px 8px;
-    font-size: 0.65rem;
+    font-size: var(--font-size-xs);
     min-width: 50px;
   }
 }

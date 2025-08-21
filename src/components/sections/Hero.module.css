@@ -110,7 +110,7 @@
 
 .companyName {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 4rem;
+  font-size: var(--font-size-hero-title);
   letter-spacing: 4px;
   margin: 0;
   color: white;
@@ -132,7 +132,7 @@
 
 .visionTitle {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 3rem;
+  font-size: var(--font-size-section-title);
   font-weight:900;
   margin: 0 0 var(--space-6);
   color: white;
@@ -140,7 +140,7 @@
 
 .visionText {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: var(--font-size-subtitle);
   line-height: 1.5;
   font-weight: 700;
   margin: 0;
@@ -154,16 +154,16 @@
 /* Responsive Typography */
 @media (max-width: 1200px) {
   .companyName {
-    font-size: 3.5rem;
+    font-size: var(--font-size-4xl);
     letter-spacing: 3px;
   }
   
   .visionTitle {
-    font-size: 2.8rem;
+    font-size: var(--font-size-3xl);
   }
   
   .visionText {
-    font-size: 1.3rem;
+    font-size: var(--font-size-xl);
   }
   
   .logo {
@@ -173,16 +173,16 @@
 
 @media (max-width: 900px) {
   .companyName {
-    font-size: 3rem;
+    font-size: var(--font-size-4xl);
     letter-spacing: 2px;
   }
   
   .visionTitle {
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
   }
   
   .visionText {
-    font-size: 1.2rem;
+    font-size: var(--font-size-lg);
   }
   
   .logo {
@@ -192,16 +192,16 @@
 
 @media (max-width: 768px) {
   .companyName {
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
     letter-spacing: 2px;
   }
   
   .visionTitle {
-    font-size: 2.2rem;
+    font-size: var(--font-size-2xl);
   }
   
   .visionText {
-    font-size: 1.1rem;
+    font-size: var(--font-size-lg);
   }
   
   .logo {
@@ -211,16 +211,16 @@
 
 @media (max-width: 480px) {
   .companyName {
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     letter-spacing: 1px;
   }
   
   .visionTitle {
-    font-size: 1.8rem;
+    font-size: var(--font-size-xl);
   }
   
   .visionText {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     line-height: 1.4;
   }
   

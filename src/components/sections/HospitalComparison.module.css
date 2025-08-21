@@ -1,6 +1,6 @@
 .title {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 3rem;
+  font-size: var(--font-size-section-title);
   font-weight: 700;
   text-align: center;
   margin: 0 0 var(--space-7);
@@ -14,7 +14,7 @@
   gap: var(--space-8);
   margin-bottom: var(--space-7);
   align-items: start;
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
 }
 
 @media (max-width: 900px) {
@@ -32,7 +32,7 @@
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: var(--font-size-3xl);
   }
 }
 
@@ -49,20 +49,20 @@
 }
 
 .hospitalHeader h3 {
-  font-size: 1.4rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   margin: 0 0 var(--space-2);
   color: #333;
 }
 
 .subtitle {
-  font-size: 0.9rem;
+  font-size: var(--font-size-table-cell);
   color: var(--color-muted);
   margin: 0;
 }
 
 .beds {
-  font-size: 1.1rem;
+  font-size: var(--font-size-lg);
   color: #666;
   margin: var(--space-2) 0;
 }
@@ -104,7 +104,7 @@
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   color: #666;
   white-space: nowrap;
   margin: 0 var(--space-2);
@@ -115,7 +115,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--space-3) var(--space-4);
-  font-size: 1.1rem;
+  font-size: var(--font-size-lg);
   margin: 0 calc(-1 * var(--space-4));
 }
 
@@ -142,14 +142,14 @@
 }
 
 .conclusion p {
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
   font-weight: 600;
   margin: 0 0 var(--space-4);
   color: #333;
 }
 
 .footnote {
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
 }
 
 .footnote a {
@@ -170,7 +170,7 @@
 
 .references h3 {
   color: #333;
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   margin: 0 0 var(--space-4);
 }
@@ -189,7 +189,7 @@
 .references a {
   color: #4788ba;
   text-decoration: underline;
-  font-size: 0.95rem;
+  font-size: var(--font-size-base);
   line-height: 1.4;
   opacity: 0.9;
   transition: opacity 0.2s ease;

@@ -11,7 +11,7 @@
 
 .title {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--font-size-section-title);
   font-weight: 700;
   text-align: center;
   margin: 0 0 var(--space-8);
@@ -41,7 +41,7 @@
 .riskMapTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: var(--font-size-table-cell);
   background: white;
   min-width: 800px;
 }
@@ -52,7 +52,7 @@
   padding: 12px 16px;
   text-align: center;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: var(--font-size-table-header);
   border-bottom: 2px solid #dee2e6;
   vertical-align: middle;
   line-height: 1.2;
@@ -90,7 +90,7 @@
   border-radius: 20px;
   padding: 6px 16px;
 
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
   display: inline-block;
 }
@@ -103,7 +103,7 @@
   border-radius: 20px;
   padding: 6px 16px;
 
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
   display: inline-block;
 }
@@ -116,7 +116,7 @@
   border-radius: 20px;
   padding: 6px 16px;
 
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
   display: inline-block;
 }
@@ -129,7 +129,7 @@
   border-radius: 20px;
   padding: 6px 16px;
 
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
   display: inline-block;
 }
@@ -164,7 +164,7 @@
   color: white !important;
   padding: 12px 16px;
   margin: 0 0 0;
-  font-size: 0.85rem;
+  font-size: var(--font-size-table-header);
   font-weight: 700;
   text-align: center;
   border-radius: 8px 8px 0 0;
@@ -177,7 +177,7 @@
   color: #2c3e50 !important;
   padding: 12px 16px;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: var(--font-size-table-header);
   font-weight: 600;
   text-align: center;
   border-bottom: 2px solid #dee2e6;
@@ -196,7 +196,7 @@
 .profileTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: var(--font-size-table-cell);
 }
 
 .traitCell {
@@ -232,7 +232,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -244,7 +244,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -256,7 +256,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 70px;
 }
 
@@ -268,7 +268,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: var(--font-size-caption);
   min-width: 80px;
 }
 
@@ -279,14 +279,13 @@
 }
 
 .recommendationsTitle {
-  font-size: 1.1rem;
+  font-size: var(--font-size-xl);
   font-weight: 600;
   color: #5DADE2;
   margin: 0 0 var(--space-3);
 }
 
 .riskDescription {
-  font-size: 0.9rem;
   line-height: 1.6;
   color: #2c3e50;
   margin: 0 0 var(--space-2);
@@ -303,7 +302,7 @@
 }
 
 .viewLinks {
-  font-size: 0.85rem;
+  font-size: var(--font-size-table-header);
   color: #666;
   margin: 0 0 var(--space-4);
 }
@@ -319,46 +318,42 @@
 }
 
 .drillDownTitle {
-  font-size: 1rem;
   font-weight: 600;
   color: #5DADE2;
   margin: 0 0 var(--space-2);
 }
 
 .drillDownDescription {
-  font-size: 0.9rem;
   line-height: 1.6;
   color: #2c3e50;
   margin: 0 0 var(--space-2);
 }
 
 .recommendationsSubTitle {
-  font-size: 1rem;
   font-weight: 600;
   color: #5DADE2;
   margin: var(--space-4) 0 var(--space-2);
 }
 
 .recommendationsLink {
-  font-size: 0.9rem;
   margin: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
   .title {
-    font-size: 2rem;
+    font-size: var(--font-size-2xl);
     padding: 0 var(--space-4);
   }
 
   .riskMapTable {
-    font-size: 0.8rem;
+    font-size: var(--font-size-caption);
     min-width: 700px;
   }
 
   .riskMapHeader {
     padding: 12px 8px;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
   }
 
   .departmentCell,
@@ -371,14 +366,14 @@
   .highRisk,
   .criticalRisk {
     padding: 4px 12px;
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     min-width: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .title {
-    font-size: 1.6rem;
+    font-size: var(--font-size-xl);
     margin-bottom: var(--space-6);
   }
 
@@ -397,19 +392,19 @@
   }
 
   .riskMapTable {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     min-width: 600px;
   }
 
   .riskMapHeader {
     padding: 10px 6px;
-    font-size: 0.7rem;
+    font-size: var(--font-size-xs);
   }
 
   .departmentCell,
   .percentageCell {
     padding: 10px 6px;
-    font-size: 0.8rem;
+    font-size: var(--font-size-caption);
   }
 
   .lowRisk,
@@ -417,12 +412,12 @@
   .highRisk,
   .criticalRisk {
     padding: 3px 8px;
-    font-size: 0.65rem;
+    font-size: var(--font-size-xs);
     min-width: 50px;
   }
 
   .profileTable {
-    font-size: 0.8rem;
+    font-size: var(--font-size-caption);
   }
 
   .traitCell,
@@ -435,7 +430,7 @@
   .highValue,
   .criticalValue {
     padding: 3px 8px;
-    font-size: 0.65rem;
+    font-size: var(--font-size-xs);
     min-width: 50px;
   }
 
@@ -445,12 +440,12 @@
 
   .riskDescription,
   .drillDownDescription {
-    font-size: 0.85rem;
+    font-size: var(--font-size-table-header);
   }
 
   .recommendationsTitle,
   .drillDownTitle,
   .recommendationsSubTitle {
-    font-size: 0.95rem;
+    font-size: var(--font-size-base);
   }
 }
