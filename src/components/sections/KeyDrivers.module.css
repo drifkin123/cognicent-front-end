@@ -1,15 +1,6 @@
 /* Main section with sharp transition at iceberg waterline */
 .keyDriversSection {
-  background: linear-gradient(180deg, 
-    #5CBDE8 0%,           /* Light sky blue at top */
-    #4FB3E1 20%,          /* Lighter blue */
-    #3A9FD4 28%,          /* Medium-light blue - gradual approach */
-    #2E8BC0 32%,          /* Just before the sharp transition */
-    #1F5582 34%,          /* Sharp drop to darker blue - iceberg waterline */
-    #144466 36%,          /* Immediate deeper blue */
-    #0F3A5F 40%,          /* Continuing dark */
-    #0A2847 100%          /* Deep dark blue at bottom */
-  );
+  
   padding: var(--space-8) 0;
   color: white;
   position: relative;
@@ -191,19 +182,7 @@
 
 /* Responsive design */
 @media (max-width: 1024px) {
-  .keyDriversSection {
-    /* Adjust gradient for tablet - transition happens earlier since content is stacked */
-    background: linear-gradient(180deg, 
-      #5CBDE8 0%,           /* Light sky blue at top */
-      #4FB3E1 15%,          /* Lighter blue */
-      #3A9FD4 22%,          /* Medium-light blue - gradual approach */
-      #2E8BC0 26%,          /* Just before the sharp transition */
-      #1F5582 28%,          /* Sharp drop to darker blue - iceberg waterline */
-      #144466 30%,          /* Immediate deeper blue */
-      #0F3A5F 34%,          /* Continuing dark */
-      #0A2847 100%          /* Deep dark blue at bottom */
-    );
-  }
+  
 
   .content {
     flex-direction: column;
@@ -239,20 +218,7 @@
 }
 
 @media (max-width: 768px) {
-  .keyDriversSection {
-    padding: var(--space-6) 0;
-    /* Adjust gradient for mobile - transition happens even earlier */
-    background: linear-gradient(180deg, 
-      #5CBDE8 0%,           /* Light sky blue at top */
-      #4FB3E1 10%,          /* Lighter blue */
-      #3A9FD4 18%,          /* Medium-light blue - gradual approach */
-      #2E8BC0 22%,          /* Just before the sharp transition */
-      #1F5582 24%,          /* Sharp drop to darker blue - iceberg waterline */
-      #144466 26%,          /* Immediate deeper blue */
-      #0F3A5F 30%,          /* Continuing dark */
-      #0A2847 100%          /* Deep dark blue at bottom */
-    );
-  }
+  
   
   .mainTitle {
     font-size: var(--font-size-2xl);

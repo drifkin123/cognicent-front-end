@@ -88,15 +88,6 @@ h6 {
   overflow: hidden;
 }
 
-a { 
-  color: var(--color-accent-dark); 
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--color-accent);
-}
-
 /* Responsive grid helpers */
 @media (max-width: 768px) {
   .container {

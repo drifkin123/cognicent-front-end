@@ -3,7 +3,7 @@ import styles from './FinancialSuccess.module.css';
 function FinancialSuccess() {
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.content}>
           <div className={styles.textContent}>
             <h2 className={styles.title}>High Patient Satisfaction Leads to Financial Success</h2>
@@ -25,7 +25,7 @@ function FinancialSuccess() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Deloitte: The value of patient experience - Hospitals with better patient-reported experience perform better financially
+                Deloitte: The value of patient experience
               </a>
             </li>
             <li>
