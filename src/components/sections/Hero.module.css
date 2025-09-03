@@ -53,7 +53,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  background: #636363;
   z-index: -1;
 }
 
@@ -78,7 +78,7 @@
   transform: translateY(-50%);
   width: 100%;
   height: 70%;
-  background: rgba(64, 64, 64, 0.7);
+  background: rgba(138, 138, 138, 0.7);
   z-index: 0;
   backdrop-filter: blur(4px);
 }
@@ -120,7 +120,7 @@
 }
 
 .rightCol {
-  background: #4a5568;
+  background: rgb(63, 63, 63);
   padding: var(--space-8);
   display: flex;
   flex-direction: column;
@@ -132,7 +132,7 @@
 
 .visionTitle {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: var(--font-size-section-title);
+  font-size: var(--font-size-hero-title);
   font-weight:900;
   margin: 0 0 var(--space-6);
   color: white;
@@ -140,15 +140,15 @@
 
 .visionText {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-section-title);
   line-height: 1.5;
   font-weight: 700;
   margin: 0;
-  color: var(--color-accent);
+  color: rgb(73, 161, 229);
 }
 
 .visionHighlight {
-  color: var(--color-accent);
+  color: rgb(73, 161, 229);
 }
 
 /* Responsive Typography */
@@ -159,11 +159,11 @@
   }
   
   .visionTitle {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
   }
   
   .visionText {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
   }
   
   .logo {
@@ -178,11 +178,11 @@
   }
   
   .visionTitle {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
   }
   
   .visionText {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
   
   .logo {
@@ -197,11 +197,11 @@
   }
   
   .visionTitle {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
   }
   
   .visionText {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
   
   .logo {
@@ -216,11 +216,11 @@
   }
   
   .visionTitle {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-2xl);
   }
   
   .visionText {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
     line-height: 1.4;
   }
   

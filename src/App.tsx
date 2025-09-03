@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
 import PatientSatisfaction from './components/sections/PatientSatisfaction';
@@ -28,7 +27,6 @@ function App() {
         <meta property="og:type" content="website" />
       </Helmet>
       <main id="main">
-        {/* Sections matching the PDF slides exactly */}
         <Hero />
         <PatientSatisfaction />
         <FinancialSuccess />
