@@ -1,66 +1,46 @@
 /* Main section with sharp transition at iceberg waterline */
 .keyDriversSection {
-  
-  padding: var(--space-8) 0;
+  min-width: 1040px;
+  background: rgb(105, 199, 246);
   color: white;
   position: relative;
   overflow: hidden;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 2;
+.keyDriversSection::before {
+  content: '';
+  background-color: #1E5E8E;
+  position: absolute;
+  top: 253px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .content {
   display: flex;
   align-items: center;
-  min-height: 500px;
 }
 
-/* Left side - Hospital and Iceberg */
 .leftContent {
-  flex: 0 0 45%;
-  position: relative;
-  height: 500px;
-}
-
-.hospitalContainer {
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
-.hospitalImage {
-  width: 280px;
-  height: auto;
-  /* Remove filter to show original colors */
+  align-self: flex-start;
 }
 
 .icebergContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
   display: flex;
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
 }
 
 .icebergImage {
-  width: 350px;
+  max-height: 800px;
+  width: 300px;
+  min-width: 300px;
   height: auto;
-  /* Remove filter to show original colors */
-  opacity: 0.9;
-  position: relative;
+  transform: scale(1.5);
   z-index: 5;
 }
-
-
 
 /* Right side - Text content */
 .rightContent {
@@ -68,32 +48,26 @@
   padding-left: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically within the darker blue zone */
-  padding-top: 100px; /* Reduced padding since no waterline alignment needed */
+  justify-content: center;
+  /* Center content vertically within the darker blue zone */
+  padding-top: 100px;
+  /* Reduced padding since no waterline alignment needed */
 }
 
 .mainTitle {
-  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: var(--font-size-section-title);
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 60px 0;
-  color: white;
-  text-align: center;
+  margin-top: -60px !important;
 }
 
 /* Drivers list styling */
 .driversList {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   margin-top: 0;
   padding-top: 20px;
 }
 
 .driverItem {
-  display: flex;
-  align-items: center;
   min-height: 40px;
   position: relative;
 }
@@ -104,7 +78,8 @@
   width: 120px;
   height: 3px;
   background-color: white;
-  right: -120px; /* Start from inside iceberg, extend outward */
+  right: -120px;
+  /* Start from inside iceberg, extend outward */
   z-index: 25;
 }
 
@@ -136,29 +111,29 @@
 
 .driverText strong {
   font-weight: 600;
-  color: #FFD700; /* Gold color for visible problems */
+  color: #FFD700;
+  /* Gold color for visible problems */
 }
 
 .references {
-  margin-top: var(--space-8);
-  padding-top: var(--space-6);
+  text-align: right;
   color: white;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  text-align: left;
+  margin-top: var(--space-6);
 }
 
 .references h3 {
+  position: relative;
   color: white;
   font-size: var(--font-size-xl);
   font-weight: 600;
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-2);
 }
 
 .references ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 800px;
 }
 
 .references li {
@@ -169,101 +144,11 @@
   color: white;
   text-decoration: underline;
   font-size: var(--font-size-base);
-  line-height: 1.4;
+  line-height: 1;
   opacity: 0.9;
   transition: opacity 0.2s ease;
-  display: block;
 }
 
 .references a:hover {
-  opacity: 1;
   text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 1024px) {
-  
-
-  .content {
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-  }
-  
-  .leftContent {
-    flex: none;
-    width: 100%;
-    height: 400px;
-  }
-  
-  .rightContent {
-    padding-left: 0;
-    padding-top: 40px; /* Reduce top padding on tablet */
-  }
-  
-  .mainTitle {
-    font-size: var(--font-size-3xl);
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .hospitalImage {
-    width: 150px;
-  }
-  
-  .icebergImage {
-    margin-top: 100px;
-    width: 240px;
-  }
-}
-
-@media (max-width: 768px) {
-  
-  
-  .mainTitle {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .driverText {
-    font-size: var(--font-size-base);
-  }
-  
-  .leftContent {
-    height: 300px;
-  }
-  
-  .hospitalImage {
-    width: 120px;
-  }
-  
-  .icebergImage {
-    margin-top: 100px;
-    width: 200px;
-  }
-  
-  .icebergArrow {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .mainTitle {
-    font-size: var(--font-size-xl);
-  }
-  
-  .driversList {
-    gap: 30px;
-  }
-  
-  .driverText {
-    font-size: var(--font-size-base);
-  }
-  
-  .rightContent {
-    padding-top: 20px; /* Minimal top padding on mobile */
-  }
-
-  .icebergImage {
-    margin-top: 0;
-  }
 }

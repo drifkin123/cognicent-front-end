@@ -1,48 +1,49 @@
+import classNames from 'classnames';
 import styles from './KeyDrivers.module.css';
 
 function KeyDrivers() {
   return (
     <div className={styles.keyDriversSection}>
-      <div className={styles.container}>
+      <div className="container">
         {/* Centered Title at Top */}
-        <h1 className={styles.mainTitle}>
-          Key Drivers of Patient Experience<br />
-          are Measurable and Actionable
-        </h1>
+
 
         <div className={styles.content}>
-          {/* Left side - Hospital and Iceberg */}
-          <div className={styles.leftContent}>
-            <div className={styles.icebergContainer}>
-              <img src="/images/berg.png" alt="Iceberg" className={styles.icebergImage} />
-            </div>
+          <div className={styles.icebergContainer}>
+            <img src="/images/berg.png" alt="Iceberg" className={styles.icebergImage} />
           </div>
 
-          {/* Right side - Text Content with arrows */}
-          <div className={styles.rightContent}>
-            <div className={styles.driversList}>
-              <div className={styles.driverItem}>
-                <span className={styles.driverText}>
-                  <em>Poor staff training + management</em> = <strong>Claims denials due to filing mistakes</strong>
-                </span>
-              </div>
+          <div>
+            <h2 className={classNames("section-title", styles.mainTitle)}>
+              Key Drivers of Patient Experience are Measurable and Actionable
+            </h2>
 
-              <div className={styles.driverItem}>
-                <span className={styles.driverText}>
-                  <em>High staff turnover</em> = <strong>inability to receive timely care, appointments, information</strong>
-                </span>
-              </div>
+            {/* Right side - Text Content with arrows */}
+            <div className={styles.rightContent}>
+              <div className={styles.driversList}>
+                <div className={styles.driverItem}>
+                  <span className={styles.driverText}>
+                    <em>Poor staff training + management</em> = <strong>Claims denials due to filing mistakes</strong>
+                  </span>
+                </div>
 
-              <div className={styles.driverItem}>
-                <span className={styles.driverText}>
-                  <em>Lack of communication + teamwork</em> = <strong>Poor care coordination</strong>
-                </span>
-              </div>
+                <div className={styles.driverItem}>
+                  <span className={styles.driverText}>
+                    <em>High staff turnover</em> = <strong>inability to receive timely care, appointments, information</strong>
+                  </span>
+                </div>
 
-              <div className={styles.driverItem}>
-                <span className={styles.driverText}>
-                  <em>Poor decision-making + management</em> = <strong>Low patient resources & courtesy</strong>
-                </span>
+                <div className={styles.driverItem}>
+                  <span className={styles.driverText}>
+                    <em>Lack of communication + teamwork</em> = <strong>Poor care coordination</strong>
+                  </span>
+                </div>
+
+                <div className={styles.driverItem}>
+                  <span className={styles.driverText}>
+                    <em>Poor decision-making + management</em> = <strong>Low patient resources & courtesy</strong>
+                  </span>
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styles from './FinancialSuccess.module.css';
 
 function FinancialSuccess() {
@@ -6,7 +7,7 @@ function FinancialSuccess() {
       <div className="container">
         <div className={styles.content}>
           <div className={styles.textContent}>
-            <h2 className={styles.title}>High Patient Satisfaction Leads to Financial Success</h2>
+            <h2 className={classNames(styles.title, 'section-title')}>High Patient Satisfaction Leads to Financial Success</h2>
             <ul className={styles.benefits}>
               <li><em>higher operating margins</em></li>
               <li><em>higher revenue generation per adjusted patient day</em></li>

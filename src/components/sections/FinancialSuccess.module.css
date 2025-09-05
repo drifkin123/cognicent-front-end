@@ -19,12 +19,6 @@
 }
 
 .title {
-  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: var(--font-size-hero-title);
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0 0 var(--space-8);
-  color: white;
   max-width: 800px;
 }
 

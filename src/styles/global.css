@@ -23,10 +23,12 @@ img { max-width: 100%; display: block; }
 section { padding: 0; }
 
 .section-title {
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-  font-size: var(--font-size-section-title);
-  margin: 0 0 var(--space-5);
+  font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--font-size-hero-title);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 var(--space-8);
+  color: white;
 }
 
 .section-subtitle {
