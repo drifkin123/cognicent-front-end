@@ -29,7 +29,7 @@ function KeyDrivers() {
 
                 <div className={styles.driverItem}>
                   <span className={styles.driverText}>
-                    <em>High staff turnover</em> = <strong>inability to receive timely care, appointments, information</strong>
+                    <em>High staff turnover</em> = <strong>Inability to receive timely care, appointments, information</strong>
                   </span>
                 </div>
 

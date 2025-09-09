@@ -1,9 +1,13 @@
+.titleContainer {
+  text-align: center;
+}
+
 .title {
   font-family: "Montserrat", Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-size: var(--font-size-section-title);
-  font-weight: 700;
-  text-align: center;
-  margin: 0 0 var(--space-7);
+  font-size: var(--font-size-hero-title);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 auto var(--space-8);
   color: #333;
 }
 
@@ -82,7 +86,7 @@
 }
 
 .metricsTable {
-  padding: var(--space-4);
+  padding: 0 var(--space-4);
 }
 
 .distanceIndicator {
@@ -113,10 +117,23 @@
 .metric {
   display: flex;
   justify-content: space-between;
+  background: #f8f8f8;
   align-items: center;
   padding: var(--space-3) var(--space-4);
   font-size: var(--font-size-lg);
   margin: 0 calc(-1 * var(--space-4));
+}
+
+.metric:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.metric:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.metric:only-child {
+  border-radius: 8px;
 }
 
 .metric.highlighted {
@@ -137,14 +154,12 @@
 
 .conclusion {
   text-align: center;
-  padding: var(--space-6);
   background: white;
 }
 
 .conclusion p {
   font-size: var(--font-size-2xl);
   font-weight: 600;
-  margin: 0 0 var(--space-4);
   color: #333;
 }
 
@@ -161,25 +176,25 @@
   text-decoration: underline;
 }
 
+
 .references {
-  margin-top: var(--space-8);
-  text-align: left;
-  color: #333;
+  color: rgb(35, 35, 35);
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  margin-top: var(--space-6);
 }
 
 .references h3 {
-  color: #333;
+  position: relative;
+  color: rgb(35, 35, 35);;
   font-size: var(--font-size-xl);
   font-weight: 600;
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-2);
 }
 
 .references ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 800px;
 }
 
 .references li {
@@ -187,17 +202,14 @@
 }
 
 .references a {
-  color: #4788ba;
+  color: rgb(35, 35, 35);
   text-decoration: underline;
   font-size: var(--font-size-base);
-  line-height: 1.4;
+  line-height: 1;
   opacity: 0.9;
   transition: opacity 0.2s ease;
-  display: block;
 }
 
 .references a:hover {
-  color: #0288D1;
-  opacity: 1;
   text-decoration: underline;
 }

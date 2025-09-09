@@ -5,7 +5,9 @@ function HospitalComparison() {
   return (
     <Section id="comparison">
       <div className={styles.comparisonContainer}>
-        <h2 className={styles.title}>High - vs - Low</h2>
+        <div className={styles.titleContainer}>
+          <h2 className={styles.title}>High - vs - Low</h2>
+        </div>
 
         <div className={styles.hospitalsGrid}>
           <div className={styles.hospital}>
