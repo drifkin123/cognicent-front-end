@@ -90,11 +90,11 @@
 
 .processStep {
   background: white;
-  padding: var(--space-5);
+  padding: var(--space-2) var(--space-5) var(--space-5);
   border-radius: var(--radius-2);
   text-align: center;
   border: 3px solid var(--color-accent);
-  height: 100%;
+  height: 250px;
   width: 250px;
   justify-self: center;
   display: flex;
@@ -123,25 +123,28 @@
 }
 
 .iconContainer {
-  margin-bottom: var(--space-3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
   color: #0a0a0a;
   display: inline-block;
+  max-width: 20%;
 }
 
 .stepTitle {
   font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--color-accent);
-  margin: 0 0 var(--space-4);
+  margin: 7px 0;
   letter-spacing: 1px;
 }
 
 .stepList {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: var(--space-4);
   margin: 0;
   font-size: var(--font-size-base);
   line-height: 1.8;
@@ -149,7 +152,6 @@
 }
 
 .stepList li {
-  margin-bottom: var(--space-2);
   color: #0a0a0a;
 }
 

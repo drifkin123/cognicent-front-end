@@ -1,17 +1,20 @@
 .integrationSection {
   padding: var(--space-8) 0;
   text-align: center;
+  background-color: #f8f9fa;
 }
 
 .logoContainer {
   margin-bottom: var(--space-6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto var(--space-3);
-  display: block;
+.logoContainer .logo {
+  width: 400px;
+  height: auto;
 }
 
 .brandName {
@@ -34,6 +37,7 @@
 
 .integrationImage {
   width: 100%;
+  max-width:1000px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -63,7 +67,7 @@
 .quarter {
   background: #f8f9fa;
   border-radius: var(--radius-2);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   position: relative;

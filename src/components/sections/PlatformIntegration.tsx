@@ -1,13 +1,10 @@
-import Section from '../../components/common/Section';
 import styles from './PlatformIntegration.module.css';
 
 function PlatformIntegration() {
   return (
-    <Section id="platform-integration">
       <div className={styles.integrationSection}>
         <div className={styles.logoContainer}>
-          <img src="/images/cognicit_logo_square_cyan.svg" alt="Cognicit Logo" className={styles.logo} />
-          <h2 className={styles.brandName}>COGNICIT</h2>
+          <img className={styles.logo} src="/images/cog-big.png" alt="Cognicit Logo" />
         </div>
 
         <p className={styles.description}>
@@ -17,7 +14,6 @@ function PlatformIntegration() {
         <img src="/images/notepages.svg" alt="Notepages" className={styles.integrationImage} />
 
       </div>
-    </Section>
   );
 }
 
